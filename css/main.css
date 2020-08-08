@@ -144,6 +144,14 @@ address {
   font-style: normal; 
 }
 
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
@@ -243,9 +251,20 @@ footer .copyright {
 
 /* ------------ Mobile Styles - Homepage ---------*/
 
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 /* Hero Area */
 
 .hero-area {
+  background: url('../img/hero.jpg') center no-repeat #333;
+  background-size: cover;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -299,6 +318,8 @@ input[type=button] {
 /* Features */
 
 .features {
+  background: url('../img/features.jpg') center no-repeat #333;
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -524,7 +545,7 @@ input[type=button] {
   }
 
   header figure {
-    width: 30%;
+    width: 34%;
   }
 
   header nav {
@@ -540,6 +561,10 @@ input[type=button] {
   }
 
   /* Hero Area */
+
+  .hero-area {
+    min-height: 600px;
+  }
 
   .hero-area h1 {
     font-size: 3em;
@@ -563,6 +588,8 @@ input[type=button] {
   }
 
   /* Features */
+
+
 
   .features h2 {
     margin-bottom: 20px;
@@ -591,8 +618,13 @@ input[type=button] {
     width: 85%;
   }
 
+  .reviews h3 {
+    margin: 0;
+  }
+
+  .reviews article figure,
   .reviews article div {
-    width: 50%;
+    width: 48%;
   }
 
   /* Footer */
@@ -695,6 +727,10 @@ input[type=button] {
 
   header {
     padding: 15px 0;
+  }
+
+  header figure {
+    width: 30%;
   }
 
   /* Hero Area */
